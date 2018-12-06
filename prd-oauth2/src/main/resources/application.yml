@@ -1,0 +1,14 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: sso-server
+### freemarker
+  freemarker:
+    request-context-attribute: request
+    cache: false
+### resource (default: /**  + classpath:/static/ )
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/

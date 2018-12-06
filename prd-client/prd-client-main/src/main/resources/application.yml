@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: main-service-client
+server:
+  port: 9003
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+  eureka:
+    enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+  instance:
+    status-page-url: http://localhost:9004/eureka//swagger-ui.html

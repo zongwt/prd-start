@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      name: main-service
+      profile: ${spring.profiles.active} # 要读取的配置文件profile属性
+      label: master
+      discovery:
+        enabled: true
+        serviceId: prd-config
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

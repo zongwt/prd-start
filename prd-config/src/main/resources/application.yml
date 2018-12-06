@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: prd-config
+#  cloud:
+#    config:
+#      server:
+#        git: #配置git仓库地址
+#          uri: https://gitee.com/zongtao/spring-cloud-config.git
+#          username: zong_weitao@sina.com
+#          password: zong315409
+#          searchPaths: config
+  profiles:
+    active: native    #开启本地配置 默认为git
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config/
+
+server:
+  port: 9005
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/

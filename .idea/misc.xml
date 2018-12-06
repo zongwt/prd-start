@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-gate/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-gate/prd-gate-main/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-db/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-db/prd-db-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-config/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-db/prd-db-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-oauth2/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenServices">
+    <service-url>http://localhost:8081/repository/maven-public/</service-url>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="c3072184-9647-464e-a4fc-892aa17e9e19" />
+      <option name="name" value="c3072184-9647-464e-a4fc-892aa17e9e19" />
+      <option name="url" value="http://localhost:8081/repository/maven-public/" />
+    </remote-repository>
+  </component>
+</project>

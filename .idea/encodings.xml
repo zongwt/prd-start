@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/prd-admin-ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-admin-ui/src/main/resources/static/topjui/js/topjui.core.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/prd-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-client/prd-client-main" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-db" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-db/prd-db-druid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-db/prd-db-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-db/prd-db-redis/src/main/java/com/prd/config/EntityRedisSerializer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/prd-db/prd-db-redis/src/main/java/com/prd/config/RedisConfig.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/prd-db/prd-db-redis/src/main/java/com/prd/config/RedisService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/prd-db/prd-db-redis/src/main/java/com/prd/config/SerializeUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/prd-db/prd-db-redis/src/main/resources/application.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/prd-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-modules" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-modules/prd-main" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-oauth2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-zuul" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

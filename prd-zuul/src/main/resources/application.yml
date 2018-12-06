@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: prd-zuul
+server:
+  port: 9004
+
+zuul:
+  ignoredServices: '*' #忽略所有未配置的service
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+  routes:
+    main-service: #自定义名称
+      path: /main-service/**
+      serviceId: main-service-client #/user/开头的路径转发至main-service-client微服务
+    sso-server: #单点登陆服务
+      path: /sso-server/**
+      serviceId: sso-server
+    main: #自定义名称
+      path: /main/**
+      serviceId: main-service
+
+hystrix: #hystrix配置
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon: #ribbon负载均衡参数配置
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+  instance:
+    status-page-url: http://localhost:9004/swagger-ui.html
