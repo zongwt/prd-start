@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.service.ApiInfo;
-import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger.web.UiConfiguration;
@@ -22,9 +21,9 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("PRD系统")
-                .description("PRD系统接口文档说明")
-                .termsOfServiceUrl("http://localhost:9004")
+                .title("PRD分布式系统")
+                .description("PRD分布式系统接口文档说明")
+                .termsOfServiceUrl("http://localhost:8888")
                 .version("1.0")
                 .build();
     }

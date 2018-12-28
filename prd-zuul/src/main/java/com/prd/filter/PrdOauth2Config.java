@@ -25,6 +25,7 @@ public class PrdOauth2Config {
         registration.setFilter(new PrdSsoTokenFilter());
         registration.addInitParameter(Conf.SSO_SERVER, ssoServer);
         registration.addInitParameter(Conf.SSO_LOGOUT_PATH, ssoLogout);
+        registration.addInitParameter("exclusions", ".js,.gif,.jpg,.png,.css,.ico,/reg,swagger,api");
         return registration;
     }
 

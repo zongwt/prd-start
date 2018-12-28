@@ -5,6 +5,7 @@ import com.prd.oauth2.core.result.ReturnT;
 import com.prd.oauth2.user.SsoUser;
 import com.prd.oauth2.util.JacksonUtil;
 import com.prd.oauth2.util.SsoLoginHelper;
+import com.prd.tools.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,10 @@ public class PrdSsoTokenFilter extends HttpServlet implements Filter {
     private String ssoServer;
     private String logoutPath;
 
+    // 过滤器排除
+    private String[] prefixIignores ;
+    private String ignoresParam;
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -32,7 +37,10 @@ public class PrdSsoTokenFilter extends HttpServlet implements Filter {
         if (ssoServer!=null && ssoServer.trim().length()>0) {
             logoutPath = filterConfig.getInitParameter(Conf.SSO_LOGOUT_PATH);
         }
-
+        ignoresParam = filterConfig.getInitParameter("exclusions");
+        if (Utils.availableStr(ignoresParam)) {
+            prefixIignores = ignoresParam.split(",");
+        }
         logger.info("PrdSsoFilter init.");
     }
 
@@ -48,8 +56,10 @@ public class PrdSsoTokenFilter extends HttpServlet implements Filter {
         res.setHeader("Access-Control-Allow-Headers","x-requested-with,Cache-Control,Pragma,Content-Type,sessionid");
         res.setHeader("Access-Control-Allow-Credentials","true");
         String servletPath = ((HttpServletRequest) request).getServletPath();
-        String link = req.getRequestURL().toString();
-
+        if (canIgnore((HttpServletRequest) request)) {
+            chain.doFilter(request, response);
+            return;
+        }
         String sessionid = SsoLoginHelper.cookieSessionIdGetByHeader(req);
         SsoUser ssoUser = SsoLoginHelper.loginCheck(sessionid);
 
@@ -79,5 +89,21 @@ public class PrdSsoTokenFilter extends HttpServlet implements Filter {
         // already login, allow
         chain.doFilter(request, response);
         return;
+    }
+
+    /**
+     * 判断
+     * @param request
+     * @return
+     */
+    private boolean canIgnore(HttpServletRequest request) {
+        boolean isExcludedPage = false;
+        for (String page : prefixIignores) {// 判断是否在过滤url之外
+            if (request.getServletPath().contains(page)) {
+                isExcludedPage = true;
+                break;
+            }
+        }
+        return isExcludedPage;
     }
 }

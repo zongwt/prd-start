@@ -4,6 +4,7 @@ import com.prd.oauth2.conf.Conf;
 import com.prd.oauth2.user.SsoUser;
 import com.prd.oauth2.util.JacksonUtil;
 import com.prd.oauth2.util.SsoLoginHelper;
+import com.prd.tools.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,13 +25,20 @@ public class PrdSsoFilter extends HttpServlet implements Filter {
     private String ssoServer;
     private String logoutPath;
 
+    // 过滤器排除
+    private String[] prefixIignores ;
+    private String ignoresParam;
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         ssoServer = filterConfig.getInitParameter(Conf.SSO_SERVER);
         if (ssoServer!=null && ssoServer.trim().length()>0) {
             logoutPath = filterConfig.getInitParameter(Conf.SSO_LOGOUT_PATH);
         }
-
+        ignoresParam = filterConfig.getInitParameter("exclusions");
+        if (Utils.availableStr(ignoresParam)) {
+            prefixIignores = ignoresParam.split(",");
+        }
         logger.info("PrdSsoFilter init.");
     }
 
@@ -40,6 +48,10 @@ public class PrdSsoFilter extends HttpServlet implements Filter {
         HttpServletResponse res = (HttpServletResponse) response;
         String servletPath = ((HttpServletRequest) request).getServletPath();
         String link = req.getRequestURL().toString()+ "?" + (req.getQueryString());
+        if (canIgnore((HttpServletRequest) request)) {
+            chain.doFilter(request, response);
+            return;
+        }
         // logout filter
         if (logoutPath!=null
                 && logoutPath.trim().length()>0
@@ -97,6 +109,17 @@ public class PrdSsoFilter extends HttpServlet implements Filter {
         // already login, allow
         chain.doFilter(request, response);
         return;
+    }
+
+    private boolean canIgnore(HttpServletRequest request) {
+        boolean isExcludedPage = false;
+        for (String page : prefixIignores) {// 判断是否在过滤url之外
+            if (((HttpServletRequest) request).getServletPath().equals(page)) {
+                isExcludedPage = true;
+                break;
+            }
+        }
+        return isExcludedPage;
     }
 
 }

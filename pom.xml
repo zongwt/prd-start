@@ -17,7 +17,7 @@
 
     <properties>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
-        <swagger-version>2.7.0</swagger-version>
+        <!--<swagger-version>2.7.0</swagger-version>-->
     </properties>
 
     <modules>
@@ -32,16 +32,16 @@
     </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger-version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>io.springfox</groupId>-->
+            <!--<artifactId>springfox-swagger2</artifactId>-->
+            <!--<version>${swagger-version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>io.springfox</groupId>-->
+            <!--<artifactId>springfox-swagger-ui</artifactId>-->
+            <!--<version>${swagger-version}</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

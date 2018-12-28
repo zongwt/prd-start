@@ -3,6 +3,7 @@ package com.prd.controller;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.prd.client.LoginClient;
 import com.prd.result.DataJsonResult;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,7 +15,7 @@ public class LoginController {
     @Autowired
     private LoginClient loginClient;
 
-
+    @ApiOperation(value="登陆", notes="登陆")
     @GetMapping("/login")
     @HystrixCommand(fallbackMethod="loginFallback")
     public DataJsonResult ListUsers(@RequestParam(value = "username") String username, @RequestParam(value = "password") String password){
