@@ -6,9 +6,13 @@
         <artifactId>prd-start</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>prd-eureka</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <name>prd-eureka</name>
+    <description>Demo project for Spring Boot</description>
 
     <dependencies>
         <dependency>
@@ -32,6 +36,7 @@
     </dependencies>
 
     <build>
+        <finalName>prd-eureka</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -45,7 +50,7 @@
                     <!-- 注意imageName要符合正则[a-z0-9-_.]的，否则构建不会成功 -->
                     <imageName>${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
-                    <dockerHost>http://192.168.164.129:2375</dockerHost>
+                    <dockerHost>http://192.168.164.138:2375</dockerHost>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>

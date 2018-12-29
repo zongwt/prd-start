@@ -39,14 +39,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.1.0</version>
@@ -54,7 +46,7 @@
                     <!-- 注意imageName要符合正则[a-z0-9-_.]的，否则构建不会成功 -->
                     <imageName>${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
-                    <dockerHost>http://192.168.164.129:2375</dockerHost>
+                    <dockerHost>http://192.168.164.138:2375</dockerHost>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
