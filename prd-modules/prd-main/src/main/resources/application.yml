@@ -3,3 +3,5 @@ server:
 spring:
   application:
     name: main-service
+  zipkin:
+    base-url: http://localhost:9009

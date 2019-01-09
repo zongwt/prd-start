@@ -14,6 +14,7 @@
         <module name="prd-main" />
         <module name="prd-oauth2" />
         <module name="prd-utils" />
+        <module name="prd-zipkin" />
         <module name="prd-zuul" />
       </profile>
     </annotationProcessing>
@@ -23,5 +24,17 @@
   </component>
   <component name="JavacSettings">
     <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="prd-client-main" options="-parameters" />
+      <module name="prd-config" options="-parameters" />
+      <module name="prd-db-druid" options="-parameters" />
+      <module name="prd-db-redis" options="-parameters" />
+      <module name="prd-eureka" options="-parameters" />
+      <module name="prd-main" options="-parameters" />
+      <module name="prd-oauth2" options="-parameters" />
+      <module name="prd-utils" options="-parameters" />
+      <module name="prd-zipkin" options="-parameters" />
+      <module name="prd-zuul" options="-parameters" />
+    </option>
   </component>
 </project>

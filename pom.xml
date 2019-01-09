@@ -29,6 +29,7 @@
         <module>prd-client</module>
         <module>prd-oauth2</module>
         <module>prd-zuul</module>
+        <module>prd-zipkin</module>
     </modules>
 
     <dependencies>

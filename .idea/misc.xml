@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/prd-config/pom.xml" />
         <option value="$PROJECT_DIR$/prd-db/prd-db-redis/pom.xml" />
         <option value="$PROJECT_DIR$/prd-oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-zipkin/pom.xml" />
       </list>
     </option>
   </component>
