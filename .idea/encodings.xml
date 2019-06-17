@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/db.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/nacos" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-client/prd-client-main" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-config" charset="UTF-8" />
@@ -17,9 +18,10 @@
     <file url="file://$PROJECT_DIR$/prd-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-modules" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-modules/prd-main" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-nacos" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-oauth2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prd-service-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-utils" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/prd-zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prd-zipkin/pom.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/prd-zuul" charset="UTF-8" />

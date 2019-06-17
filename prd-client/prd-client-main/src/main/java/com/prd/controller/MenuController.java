@@ -3,17 +3,21 @@ package com.prd.controller;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.prd.client.MenuClient;
 import com.prd.result.DataJsonResult;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Api
 public class MenuController {
 
     @Autowired
     private MenuClient menuClient;
 
+    @ApiOperation(value="菜单获取", notes="菜单获取")
     @GetMapping("/getMenus")
     @HystrixCommand(fallbackMethod="MenuFallback")
     public String getMenus(@RequestParam(value = "level") String level, @RequestParam(value = "pid", defaultValue = "1") String pid){

@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="test" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d659dc33-7673-4564-b227-547da4f5a52b" name="Default" comment="zipkin">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/PrdGateMainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/LoginClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/MenuClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/UserFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/clientImpl/LoginFallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/clientImpl/MenuFallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/clientImpl/UserFallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/controller/MenuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-config/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-config/target/classes/com/prd/PrdConfigApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-config/target/classes/config/main-service-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-druid/target/classes/com/prd/PrdMysqlApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-druid/target/classes/com/prd/config/DruidDBConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/PrdDbRedisApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/EntityRedisSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/RedisService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/SerializeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-eureka/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-eureka/target/classes/com/prd/eureka/PrdEurekaApplication$SecurityPermitAllConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-eureka/target/classes/com/prd/eureka/PrdEurekaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/PrdMainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/druid/DruidStatFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/druid/DruidStatViewServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/service/LoginService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/service/MenuService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/PrdOauth2Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/conf/Conf.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/AppController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/interceptor/PermissionInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/interceptor/WebMvcConfigurer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/resolver/WebExceptionResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/core/config/SsoRedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/core/model/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/core/result/ReturnT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/entity/ReturnT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/exception/PrdSsoException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/filter/PrdSsoFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/filter/PrdSsoTokenFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/service/UserInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/service/serviceImpl/UserInfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/store/SsoLoginStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/user/SsoUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/CookieUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/JacksonUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/JacksonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/JedisUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/SsoLoginHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/AdminLTE-local.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/M2Jd71oPJhLKp0zdtTvoM40tgx99jmYGv_xzYuwd1rU.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/M2Jd71oPJhLKp0zdtTvoM7YHq4FgHI02B8rPccK0FJQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/M2Jd71oPJhLKp0zdtTvoMxgy2Fsj5sj3EzlXpqVXRKo.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY[0].woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/fpTVHK8qsXbIeTHTrnQH6CzM2XYAq8cDhaXsrN8WXcA.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/fpTVHK8qsXbIeTHTrnQH6E78GtRp3lhchupCJNw8t58.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/fpTVHK8qsXbIeTHTrnQH6GQKuzMuncr0JB710wa2dPI.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/fpTVHK8qsXbIeTHTrnQH6Lpx497t94oDua8KfAL9f-E.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/fpTVHK8qsXbIeTHTrnQH6MAjkyiewWYrWZc50I8hK7I.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/fpTVHK8qsXbIeTHTrnQH6OXKTZYPNtG1yMB_YJSqlic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGCOFnW3Jk0f09zW_Yln67Ac.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGClYwVOhDRq2vbpGRTZ7bbs.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGDRVvBvQIc1z78c__uoBcyI.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGDovqjS_dXPZszO_XltPdNg.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGEo0As1BFRXtCDhS66znb_k.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGFKFh1TDTPrUZWzVp6FtpG8.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGFxe-GPfKKFmiXaJ_Q0GFr8.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/fonts/toadOcfmlt9b38dHJxOBGOode0-EuMkY--TSyExeINg.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/google-local/local.google.fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/css/skins/_all-skins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/dist/js/app.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/fastclick/fastclick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/_all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/aero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/grey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/square.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/square@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/iCheck/square/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/jQuery/jquery-2.2.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/adminlte/plugins/slimScroll/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/js/common.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/js/login.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/css/font-awesome.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/font-awesome-4.5.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/ionicons-2.0.1/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/ionicons-2.0.1/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/ionicons-2.0.1/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/ionicons-2.0.1/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/static/plugins/ionicons-2.0.1/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/templates/common/common.exception.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/templates/common/common.macro.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/templates/index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/templates/login.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-utils/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-utils/target/classes/com/prd/PrdUtilsApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-utils/target/classes/com/prd/result/DataJsonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-utils/target/classes/com/prd/tools/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zipkin/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zipkin/target/classes/com/prd/PrdZipkinApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/PrdZuulApplication$DocumentationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/PrdZuulApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/config/PostFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/controller/ErrorHandlerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/filter/PrdOauth2Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e1fc1f6-608d-4ba5-b54c-6c0fcf099d43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7e1fc1f6-608d-4ba5-b54c-6c0fcf099d43.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-modules/prd-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-modules/prd-main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prd-zipkin/prd-zipkin.iml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/prd-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/prd-modules/target/" />
+    <ignored path="$PROJECT_DIR$/prd-modules/prd-main/target/" />
+    <ignored path="$PROJECT_DIR$/prd-gate/target/" />
+    <ignored path="$PROJECT_DIR$/prd-gate/prd-gate-main/target/" />
+    <ignored path="$PROJECT_DIR$/prd-zuul/target/" />
+    <ignored path="$PROJECT_DIR$/prd-utils/target/" />
+    <ignored path="$PROJECT_DIR$/prd-db/target/" />
+    <ignored path="$PROJECT_DIR$/prd-db/prd-db-mysql/target/" />
+    <ignored path="$PROJECT_DIR$/prd-config/target/" />
+    <ignored path="$PROJECT_DIR$/prd-db/prd-db-druid/target/" />
+    <ignored path="$PROJECT_DIR$/prd-client/target/" />
+    <ignored path="$PROJECT_DIR$/prd-client/prd-gate-main/target/" />
+    <ignored path="$PROJECT_DIR$/prd-client/prd-client-main/target/" />
+    <ignored path="$PROJECT_DIR$/prd-db/prd-db-redis/target/" />
+    <ignored path="$PROJECT_DIR$/prd-oauth2/target/" />
+    <ignored path="$PROJECT_DIR$/prd-admin-ui/target/" />
+    <ignored path="$PROJECT_DIR$/prd-zipkin/target/" />
+    <ignored path="$PROJECT_DIR$/nacos/target/" />
+    <ignored path="$PROJECT_DIR$/prd-nacos/target/" />
+    <ignored path="$PROJECT_DIR$/prd-service-test/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/prd_start$PrdZuulApplication.ic" NAME="PrdZuulApplication Coverage Results" MODIFIED="1533369530029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.prd.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/prd_start$PrdMainApplication.ic" NAME="PrdMainApplication Coverage Results" MODIFIED="1533349498342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="prd-main@106.12.42.108" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="prd-main@106.12.42.108" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="prd-main@106.12.42.108" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="prd-main: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prd-zuul/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>address</find>
+      <find>mq</find>
+      <find>xuxueli</find>
+      <find>XxlUser</find>
+      <find>xxlUser</find>
+      <find>XxlSsoException</find>
+      <find>xxl-sso</find>
+      <find>xxl</find>
+      <find>main-service</find>
+      <find>doLogin</find>
+      <find>login</find>
+      <find>注销</find>
+      <find>dataType`</find>
+      <find>dataType: &quot;json&quot;</find>
+      <find>url: opts.url</find>
+      <find>$.ajax</find>
+      <find>defaultView</find>
+      <find>$.fn.datagrid.parseData</find>
+      <find>$.fn.datagrid</find>
+      <find>$.ajax({</find>
+      <find>Web</find>
+      <find>maven.compile.source</find>
+      <find>maven.compile.target</find>
+      <find>java.version</find>
+      <find>swagger2</find>
+      <find>swagger</find>
+      <find>SSO_LOGIN</find>
+      <find>192.168.164.129</find>
+      <find>EnableZipkinServer</find>
+      <find>EnableDiscoveryClient</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>jdbcTemplate</replace>
+      <replace>prd.oauth2</replace>
+      <replace>zongwt</replace>
+      <replace>SsoUser</replace>
+      <replace>ssoUser</replace>
+      <replace>PrdSsoException</replace>
+      <replace>192.168.164.138</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/prd-admin-ui/src/main/resources/static/js/common.js" />
+        <option value="$PROJECT_DIR$/prd-admin-ui/src/main/resources/static/static/public/js/topjui.index.js" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/client/UserFeignClient.java" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/client/clientImpl/UserFallback.java" />
+        <option value="$PROJECT_DIR$/prd-admin-ui/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-admin-ui/src/main/resources/static/topjui/js/topjui.core.js" />
+        <option value="$PROJECT_DIR$/prd-admin-ui/src/main/resources/static/view/sys/user/user.html" />
+        <option value="$PROJECT_DIR$/prd-admin-ui/src/main/resources/static/login.html" />
+        <option value="$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/conf/Conf.java" />
+        <option value="$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/controller/AppController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/prd-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/prd-zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/filter/PrdSsoFilter.java" />
+        <option value="$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/filter/PrdSsoTokenFilter.java" />
+        <option value="$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/filter/PrdOauth2Config.java" />
+        <option value="$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/PrdZuulApplication.java" />
+        <option value="$PROJECT_DIR$/prd-eureka/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/prd-config/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-zipkin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/prd-zipkin/src/main/java/com/prd/PrdZipkinApplication.java" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/prd-nacos/src/main/java/com/prd/nacos/controller/ConfigController.java" />
+        <option value="$PROJECT_DIR$/prd-nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-nacos/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/prd-nacos/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/prd-service-test/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/prd-service-test/src/main/java/com/prd/servicetest/PrdServiceTestApplication.java" />
+        <option value="$PROJECT_DIR$/prd-service-test/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-service-test/src/main/java/com/prd/servicetest/config/RestConfig.java" />
+        <option value="$PROJECT_DIR$/prd-service-test/src/main/java/com/prd/servicetest/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/config/GatewaySwaggerResourcesProvider.java" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/pom.xml" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/UserService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/developer tools/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="F:\developer tools\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="prd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="prd" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="prd" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prd-start" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prd-start" type="462c0819:PsiDirectoryNode" />
+              <item name="prd-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="hi&#9;FILE&#9;jar://F:/developer tools/jdk/jdk1.8.0_171/jre/lib/ext/localedata.jar!/sun/text/resources/hi" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555590460356" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xxl-sso/xxl-sso" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.38174275" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.prd" />
+      <recent name="com.prd.main" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\idea-project\prd-start\prd-zipkin" />
+      <recent name="F:\idea-project\prd-start\prd-zipkin\src\main\resources" />
+      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\topjui\js" />
+      <recent name="F:\idea-project\prd-start" />
+      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\view\sys" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.prd" />
+      <recent name="com.prd.config" />
+      <recent name="com.prd.client.clientImpl" />
+      <recent name="com.prd.client" />
+      <recent name="com.prd.filter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\idea-project\prd-start\prd-zipkin\src\main\java\com\prd" />
+      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\view\sys\user" />
+      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\view\" />
+      <recent name="F:\idea-project\prd-start\prd-oauth2\src\main\resources\templates" />
+      <recent name="F:\idea-project\prd-start\prd-config\src\main\resources" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 16 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.18235931" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PrdEurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prd.eureka.PrdEurekaApplication" />
+      <module name="prd-eureka" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prd.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrdZipkinApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prd.PrdZipkinApplication" />
+      <module name="prd-zipkin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prd-client-main" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="package" />
+                <option value="docker:build" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/prd-client/prd-client-main" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="prd-config" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="package" />
+                <option value="docker:build" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/prd-config" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="mvn package docker:build" />
+      </method>
+    </configuration>
+    <configuration name="prd-eureka" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="package" />
+                <option value="docker:build" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/prd-eureka" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="prd-main" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="package" />
+                <option value="docker:build" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/prd-modules/prd-main" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="prd-zuul" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="package" />
+                <option value="docker:build" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/prd-zuul" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="1.PrdEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="prd-eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prd.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prd.eureka.PrdEurekaApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2.PrdConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="prd-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prd.PrdConfigApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="3.PrdMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="prd-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prd.PrdMainApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="4.PrdGateMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="prd-client-main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prd.PrdGateMainApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="5.PrdOauth2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="prd-oauth2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prd.oauth2.PrdOauth2Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="6.PrdZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="prd-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prd.PrdZuulApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrdZipkinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="prd-zipkin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.prd.PrdZipkinApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.PrdEurekaApplication" />
+      <item itemvalue="Application.PrdZipkinApplication" />
+      <item itemvalue="Maven.prd-eureka" />
+      <item itemvalue="Maven.prd-config" />
+      <item itemvalue="Maven.prd-client-main" />
+      <item itemvalue="Maven.prd-main" />
+      <item itemvalue="Maven.prd-zuul" />
+      <item itemvalue="Spring Boot.2.PrdConfigApplication" />
+      <item itemvalue="Spring Boot.4.PrdGateMainApplication" />
+      <item itemvalue="Spring Boot.5.PrdOauth2Application" />
+      <item itemvalue="Spring Boot.6.PrdZuulApplication" />
+      <item itemvalue="Spring Boot.1.PrdEurekaApplication" />
+      <item itemvalue="Spring Boot.3.PrdMainApplication" />
+      <item itemvalue="Spring Boot.PrdZipkinApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.3.PrdMainApplication" />
+        <item itemvalue="Spring Boot.1.PrdEurekaApplication" />
+        <item itemvalue="Spring Boot.PrdZipkinApplication" />
+        <item itemvalue="Application.PrdZipkinApplication" />
+        <item itemvalue="Application.PrdEurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d659dc33-7673-4564-b227-547da4f5a52b" name="Default" comment="" />
+      <created>1532090628674</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532090628674</updated>
+      <workItem from="1532090629877" duration="2899000" />
+      <workItem from="1532096167656" duration="1785000" />
+      <workItem from="1532140625094" duration="8567000" />
+      <workItem from="1532347556227" duration="2423000" />
+      <workItem from="1532354221717" duration="4259000" />
+      <workItem from="1532358548299" duration="219000" />
+      <workItem from="1532359132288" duration="93000" />
+      <workItem from="1532359368236" duration="44000" />
+      <workItem from="1532392610415" duration="2398000" />
+      <workItem from="1532569721516" duration="2429000" />
+      <workItem from="1532605793427" duration="3096000" />
+      <workItem from="1532846657482" duration="27000" />
+      <workItem from="1532846749496" duration="133000" />
+      <workItem from="1532847237170" duration="16000" />
+      <workItem from="1532847379216" duration="264000" />
+      <workItem from="1532847708886" duration="9777000" />
+      <workItem from="1532959490183" duration="27000" />
+      <workItem from="1532959598101" duration="3359000" />
+      <workItem from="1532997382133" duration="3263000" />
+      <workItem from="1533028627292" duration="893000" />
+      <workItem from="1533046003137" duration="1616000" />
+      <workItem from="1533048652060" duration="1359000" />
+      <workItem from="1533084560211" duration="1444000" />
+      <workItem from="1533193116190" duration="883000" />
+      <workItem from="1533207726100" duration="614000" />
+      <workItem from="1533208422826" duration="6000" />
+      <workItem from="1533208614816" duration="2433000" />
+      <workItem from="1533211172936" duration="3226000" />
+      <workItem from="1533220669783" duration="2789000" />
+      <workItem from="1533256928480" duration="1718000" />
+      <workItem from="1533259897545" duration="3383000" />
+      <workItem from="1533263462851" duration="4744000" />
+      <workItem from="1533268792694" duration="1242000" />
+      <workItem from="1533270235733" duration="7952000" />
+      <workItem from="1533285049467" duration="2957000" />
+      <workItem from="1533347323474" duration="13122000" />
+      <workItem from="1533564570251" duration="3653000" />
+      <workItem from="1533607305338" duration="2144000" />
+      <workItem from="1533611343802" duration="5579000" />
+      <workItem from="1533709978897" duration="903000" />
+      <workItem from="1533738830080" duration="3390000" />
+      <workItem from="1533775256318" duration="3006000" />
+      <workItem from="1533863803882" duration="6411000" />
+      <workItem from="1533888491301" duration="3178000" />
+      <workItem from="1534082579161" duration="3723000" />
+      <workItem from="1534161784891" duration="153000" />
+      <workItem from="1534248370501" duration="2280000" />
+      <workItem from="1534344349243" duration="2115000" />
+      <workItem from="1534347437087" duration="1209000" />
+      <workItem from="1535023715588" duration="1496000" />
+      <workItem from="1535544990286" duration="3064000" />
+      <workItem from="1535549485869" duration="4073000" />
+      <workItem from="1535554741944" duration="1278000" />
+      <workItem from="1535679014746" duration="1466000" />
+      <workItem from="1535723598039" duration="305000" />
+      <workItem from="1535723950503" duration="1038000" />
+      <workItem from="1535725317683" duration="2426000" />
+      <workItem from="1535785412198" duration="1447000" />
+      <workItem from="1536137896763" duration="1052000" />
+      <workItem from="1536216140754" duration="649000" />
+      <workItem from="1536217033120" duration="10758000" />
+      <workItem from="1536280722145" duration="652000" />
+      <workItem from="1536301809929" duration="9184000" />
+      <workItem from="1536372520821" duration="11654000" />
+      <workItem from="1536504432677" duration="4601000" />
+      <workItem from="1536544177561" duration="19870000" />
+      <workItem from="1536579493800" duration="293000" />
+      <workItem from="1536579892378" duration="588000" />
+      <workItem from="1536580537329" duration="3330000" />
+      <workItem from="1536627472557" duration="3872000" />
+      <workItem from="1536634328954" duration="7741000" />
+      <workItem from="1536654785110" duration="1297000" />
+      <workItem from="1536739782618" duration="2762000" />
+      <workItem from="1536805252123" duration="16232000" />
+      <workItem from="1536885804030" duration="16685000" />
+      <workItem from="1536991599682" duration="465000" />
+      <workItem from="1536992158532" duration="2338000" />
+      <workItem from="1536994727690" duration="758000" />
+      <workItem from="1536996403440" duration="3430000" />
+      <workItem from="1537023164912" duration="107000" />
+      <workItem from="1537095367474" duration="6755000" />
+      <workItem from="1537152673410" duration="2917000" />
+      <workItem from="1537170324708" duration="5877000" />
+      <workItem from="1537255577363" duration="2068000" />
+      <workItem from="1537836082827" duration="1387000" />
+      <workItem from="1539156587593" duration="1834000" />
+      <workItem from="1539174706498" duration="1393000" />
+      <workItem from="1539221815671" duration="6227000" />
+      <workItem from="1539258514838" duration="3578000" />
+      <workItem from="1540467557701" duration="843000" />
+      <workItem from="1540468759927" duration="501000" />
+      <workItem from="1540609035518" duration="6853000" />
+      <workItem from="1543563072492" duration="181000" />
+      <workItem from="1543566495805" duration="850000" />
+      <workItem from="1543664431880" duration="357000" />
+      <workItem from="1543675309720" duration="1036000" />
+      <workItem from="1544109768548" duration="562000" />
+      <workItem from="1544111257440" duration="765000" />
+      <workItem from="1544247187213" duration="1237000" />
+      <workItem from="1544281290308" duration="1576000" />
+      <workItem from="1544283933905" duration="365000" />
+      <workItem from="1545638573343" duration="1299000" />
+      <workItem from="1545699325591" duration="647000" />
+      <workItem from="1545895360484" duration="8130000" />
+      <workItem from="1545911810839" duration="2634000" />
+      <workItem from="1545967550969" duration="2236000" />
+      <workItem from="1545980282838" duration="5733000" />
+      <workItem from="1546002195499" duration="4012000" />
+      <workItem from="1546043480657" duration="1539000" />
+      <workItem from="1546065796578" duration="614000" />
+      <workItem from="1546066626920" duration="3053000" />
+      <workItem from="1546070162138" duration="5294000" />
+      <workItem from="1546390532021" duration="2742000" />
+      <workItem from="1546498174013" duration="2008000" />
+      <workItem from="1546696049156" duration="3202000" />
+      <workItem from="1547038936979" duration="2994000" />
+      <workItem from="1547273892050" duration="692000" />
+      <workItem from="1548208396238" duration="830000" />
+      <workItem from="1548313365633" duration="2479000" />
+      <workItem from="1548384418994" duration="2610000" />
+      <workItem from="1548748452509" duration="658000" />
+      <workItem from="1548895233929" duration="11464000" />
+      <workItem from="1555550650620" duration="10844000" />
+      <workItem from="1557145217689" duration="105000" />
+      <workItem from="1557920753717" duration="226000" />
+      <workItem from="1558018837648" duration="478000" />
+      <workItem from="1560736925921" duration="7804000" />
+    </task>
+    <task id="LOCAL-00001" summary="swagger">
+      <created>1545967659335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545967659335</updated>
+    </task>
+    <task id="LOCAL-00002" summary="swagger">
+      <created>1546044385332</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546044385332</updated>
+    </task>
+    <task id="LOCAL-00003" summary="zipkin">
+      <created>1547043361757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547043361757</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="399603000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1924307" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.64810693" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6817697" visible="true" weight="0.21937639" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.15701559" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.25501114" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7915778" weight="0.41694537" />
+      <window_info anchor="bottom" id="Docker" order="10" sideWeight="0.815032" weight="0.35746104" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.20842217" side_tool="true" weight="0.28762543" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.30846325" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.21962096" />
+      <window_info anchor="bottom" id="Problems" order="14" weight="0.32962137" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.4292085" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.7851812" weight="0.2895323" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="17" visible="true" weight="0.5022272" />
+      <window_info anchor="bottom" id="Version Control" order="18" weight="0.20847268" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="19" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="20" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="21" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.22654584" />
+      <window_info anchor="right" id="Database" order="6" weight="0.065565035" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="RestServices" order="9" sideWeight="0.4988864" visible="true" weight="0.07995736" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" sideWeight="0.5011136" side_tool="true" visible="true" weight="0.13646056" />
+      <window_info anchor="right" id="BPMNPalette" order="12" />
+      <window_info anchor="right" id="Maven" order="13" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="swagger" />
+    <MESSAGE value="zipkin" />
+    <option name="LAST_COMMIT_MESSAGE" value="zipkin" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>request.getServletPath()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>page</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>!password.equals(existUser.getPassword())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>existUser.getPassword()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/prd-service-test/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-service-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-service-test/src/main/java/com/prd/servicetest/PrdServiceTestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/store/SsoLoginStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/conf/Conf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/javax/servlet/http/HttpServletResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/util/JacksonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="1220" column="18" selection-start-line="1220" selection-start-column="18" selection-end-line="1220" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/config/PostFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/core/result/ReturnT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/filter/PrdSsoTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/util/SsoLoginHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2432">
+          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/PrdOauth2Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2/controller/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-service-test/src/main/java/com/prd/servicetest/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-db/prd-db-druid/src/main/java/com/prd/config/DruidDBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1634">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-config/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-db/prd-db-druid/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-config/src/main/resources/config/main-service-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-nacos/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-zipkin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-zipkin/src/main/java/com/prd/PrdZipkinApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/PrdZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="819" selection-start-line="819" selection-end-line="819" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/web/ApiResourceController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/config/GatewaySwaggerResourcesProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/druid/DruidStatViewServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/druid/DruidStatFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/client/UserFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-utils/src/main/java/com/prd/tools/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/PrdGateMainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/PrdMainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-modules/prd-main/src/main/java/com/prd/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-zuul/src/main/java/com/prd/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prd-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.38174275" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (prd-main)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.38174275" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>prd-zuul</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.38174275" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.38174275" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

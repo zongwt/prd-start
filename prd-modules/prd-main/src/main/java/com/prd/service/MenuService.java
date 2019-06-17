@@ -2,6 +2,8 @@ package com.prd.service;
 
 import com.prd.config.RedisService;
 import com.prd.tools.Utils;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@Api
 public class MenuService {
 
     @Autowired
@@ -21,13 +24,11 @@ public class MenuService {
     @Autowired
     private RedisService redisService;
 
+    @ApiOperation(value="菜单", notes="菜单")
     @RequestMapping("/getMenus")
     public String getMenus(@RequestParam(value = "level") String level,
                                    @RequestParam(value = "pid", defaultValue = "1") String pid) throws SQLException {
         List<Map<String, Object>> res = jdbcTemplate.queryForList("SELECT * FROM sys_menu where LEVEL = '" + level +"' AND PID = '"+pid+"' ");
-//        DataJsonResult dataJsonResult = new DataJsonResult();
-//        dataJsonResult.setCode("200");
-//        dataJsonResult.setData(Utils.coverToJson(res).toString());
         return Utils.coverToJson(res).toString();
     }
 }

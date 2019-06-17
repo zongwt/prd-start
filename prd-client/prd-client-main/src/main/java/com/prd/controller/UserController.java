@@ -2,6 +2,9 @@ package com.prd.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.prd.client.UserFeignClient;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 
 
 @RestController
+@Api
 public class UserController {
 
     @Autowired
@@ -19,6 +23,8 @@ public class UserController {
     @Value("${server.port}")
     String port;
 
+    @ApiOperation(value="用户信息获取", notes="用户信息获取")
+    @ApiImplicitParam(name = "username", value = "用户名", paramType = "query", required = true, dataType = "string")
     @GetMapping("/listUsers")
     @HystrixCommand(fallbackMethod="listUsersByRibbonFallback")
     public String ListUsers(HttpServletRequest request){
