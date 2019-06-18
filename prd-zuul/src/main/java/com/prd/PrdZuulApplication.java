@@ -60,24 +60,4 @@ public class PrdZuulApplication {
         source.registerCorsConfiguration("/**", config);
         return new CorsFilter(source);
     }
-
-    @Component
-    @Primary
-    class DocumentationConfig implements SwaggerResourcesProvider {
-
-        @Override
-        public List<SwaggerResource> get() {
-            List resources = new ArrayList();
-            resources.add(swaggerResource("main-service服务API","/main-service/v2/api-docs","2.0"));
-            return resources;
-        }
-
-        private SwaggerResource swaggerResource(String name, String location, String version) {
-            SwaggerResource swaggerResource = new SwaggerResource();
-            swaggerResource.setName(name);
-            swaggerResource.setLocation(location);
-            swaggerResource.setSwaggerVersion(version);
-            return swaggerResource;
-        }
-    }
 }
