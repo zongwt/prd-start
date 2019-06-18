@@ -2,6 +2,7 @@ package com.prd.client.clientImpl;
 
 import com.prd.client.UserFeignClient;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -12,8 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 public class UserFallback implements UserFeignClient {
 
     @Override
-    public String listUsers(HttpServletRequest request) {
-        // TODO Auto-generated method stub
+    public String listUsers(@RequestParam(value = "username") String username) {
         return "main-service服务调用失败";
     }
 }

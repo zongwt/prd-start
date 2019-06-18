@@ -20,23 +20,23 @@ public class DocumentationConfig implements SwaggerResourcesProvider {
         this.routeLocator = routeLocator;
     }
 
-    @Override
-    public List<SwaggerResource> get() {
-        List<SwaggerResource> resources = new ArrayList<>();
-        List<Route> routes = routeLocator.getRoutes();
-        routes.forEach(route -> {
-            resources.add(swaggerResource(route.getId(), route.getFullPath().replace("**", "v2/api-docs"), "1.0"));
-        });
-        return resources;
-    }
-
 //    @Override
 //    public List<SwaggerResource> get() {
-//        List resources = new ArrayList<>();
-//        resources.add(swaggerResource("main-service", "/main/v2/api-docs", "2.0"));
-//        resources.add(swaggerResource("main-service-client", "/main-service/v2/api-docs", "2.0"));
+//        List<SwaggerResource> resources = new ArrayList<>();
+//        List<Route> routes = routeLocator.getRoutes();
+//        routes.forEach(route -> {
+//            resources.add(swaggerResource(route.getId(), route.getFullPath().replace("**", "v2/api-docs"), "1.0"));
+//        });
 //        return resources;
 //    }
+
+    @Override
+    public List<SwaggerResource> get() {
+        List resources = new ArrayList<>();
+        resources.add(swaggerResource("main-service", "/main/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("main-service-client", "/main-service/v2/api-docs", "2.0"));
+        return resources;
+    }
 
     private SwaggerResource swaggerResource(String name, String location, String version) {
         SwaggerResource swaggerResource = new SwaggerResource();

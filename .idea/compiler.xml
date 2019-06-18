@@ -8,14 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="prd-config" />
         <module name="prd-db-redis" />
-        <module name="prd-zuul" />
         <module name="prd-utils" />
         <module name="nacos" />
         <module name="prd-db-druid" />
         <module name="prd-oauth2" />
         <module name="prd-client-main" />
-        <module name="prd-eureka" />
         <module name="prd-main" />
+        <module name="prd-eureka" />
+        <module name="prd-zuul" />
         <module name="prd-zipkin" />
       </profile>
     </annotationProcessing>

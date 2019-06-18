@@ -3,6 +3,7 @@ package com.prd.client;
 import com.prd.client.clientImpl.UserFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -10,6 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 public interface UserFeignClient {
 
     @GetMapping("/listUsers")
-    public String listUsers(HttpServletRequest request);
+    public String listUsers(@RequestParam(value = "username") String username);
 
 }

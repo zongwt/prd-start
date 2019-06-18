@@ -8,6 +8,8 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,8 +29,9 @@ public class UserController {
     @ApiImplicitParam(name = "username", value = "用户名", paramType = "query", required = true, dataType = "string")
     @GetMapping("/listUsers")
     @HystrixCommand(fallbackMethod="listUsersByRibbonFallback")
-    public String ListUsers(HttpServletRequest request){
-        String users = this.userFeignClient.listUsers(request);
+    @ResponseBody
+    public String ListUsers(@RequestParam(value = "username") String username){
+        String users = this.userFeignClient.listUsers(username);
         return users;
     }
 
@@ -36,7 +39,7 @@ public class UserController {
      * 服务降级
      * @return
      */
-    public String listUsersByRibbonFallback(HttpServletRequest request){
+    public String listUsersByRibbonFallback(@RequestParam(value = "username") String username){
         return "listUsersByRibbon异常，端口：" + port;
     }
 
