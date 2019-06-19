@@ -90,7 +90,6 @@ public class AppController {
     @RequestMapping("/logincheck")
     @ResponseBody
     public ReturnT<SsoUser> logincheck(String sessionId) {
-
         // logout
         SsoUser ssoUser = SsoLoginHelper.loginCheck(sessionId);
         if (ssoUser == null) {
@@ -98,5 +97,4 @@ public class AppController {
         }
         return new ReturnT<SsoUser>(ssoUser);
     }
-
 }
