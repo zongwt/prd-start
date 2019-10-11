@@ -7,12 +7,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -27,7 +22,7 @@ public class UserController {
 
     @ApiOperation(value="用户信息获取", notes="用户信息获取")
     @ApiImplicitParam(name = "username", value = "用户名", paramType = "query", required = true, dataType = "string")
-    @GetMapping("/listUsers")
+    @RequestMapping("/listUsers")
     @HystrixCommand(fallbackMethod="listUsersByRibbonFallback")
     @ResponseBody
     public String ListUsers(@RequestParam(value = "username") String username){

@@ -103,7 +103,7 @@
                     <!-- 注意imageName要符合正则[a-z0-9-_.]的，否则构建不会成功 -->
                     <imageName>${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
-                    <dockerHost>http://192.168.164.138:2375</dockerHost>
+                    <dockerHost>http://192.168.164.140:2375</dockerHost>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
