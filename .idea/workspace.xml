@@ -10,80 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d659dc33-7673-4564-b227-547da4f5a52b" name="Default" comment="zipkin">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/ClientSwaggerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/PrdGateMainApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/LoginClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/MenuClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/UserFeignClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/clientImpl/LoginFallback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/clientImpl/MenuFallback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/client/clientImpl/UserFallback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/controller/MenuController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-client/prd-client-main/target/classes/com/prd/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-config/target/classes/com/prd/PrdConfigApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-druid/target/classes/com/prd/PrdMysqlApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-druid/target/classes/com/prd/config/DruidDBConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/PrdDbRedisApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/EntityRedisSerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/RedisConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/RedisService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/target/classes/com/prd/config/SerializeUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-eureka/target/classes/com/prd/eureka/PrdEurekaApplication$SecurityPermitAllConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-eureka/target/classes/com/prd/eureka/PrdEurekaApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/PrdMainApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/SwaggerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/druid/DruidStatFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/druid/DruidStatViewServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/service/LoginService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/service/MenuService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-modules/prd-main/target/classes/com/prd/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/PrdOauth2Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/conf/Conf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/AppController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/IndexController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/interceptor/PermissionInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/interceptor/WebMvcConfigurer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/controller/resolver/WebExceptionResolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/core/config/SsoRedisConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/core/model/UserInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/core/result/ReturnT.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/entity/ReturnT.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/exception/PrdSsoException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/filter/PrdSsoFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/filter/PrdSsoTokenFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/service/UserInfoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/service/serviceImpl/UserInfoServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/store/SsoLoginStore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/user/SsoUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/CookieUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/JacksonUtil$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/JacksonUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/JedisUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-oauth2/target/classes/com/prd/oauth2/util/SsoLoginHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-utils/target/classes/com/prd/PrdUtilsApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-utils/target/classes/com/prd/result/DataJsonResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-utils/target/classes/com/prd/tools/Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/DocumentationConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/PrdZuulApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/SwaggerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/config/PostFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/controller/ErrorHandlerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prd-zuul/target/classes/com/prd/filter/PrdOauth2Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e1fc1f6-608d-4ba5-b54c-6c0fcf099d43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7e1fc1f6-608d-4ba5-b54c-6c0fcf099d43.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/prd-client/prd-client-main/src/main/java/com/prd/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-db/prd-db-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-db/prd-db-redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-eureka/src/main/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/prd-eureka/src/main/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-modules/prd-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-modules/prd-main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-oauth2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-oauth2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prd-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/prd-zuul/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,12 +147,6 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
-  </component>
   <component name="ProjectId" id="1R0Gh7UKmsNJ4igEpWoAeoVPtwe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -243,24 +166,24 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/prd-oauth2/src/main/java/com/prd/oauth2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.38174275" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\idea-project\prd-start\prd-zipkin\src\main\java\com\prd" />
-      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\view\sys\user" />
-      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\view\" />
-      <recent name="F:\idea-project\prd-start\prd-oauth2\src\main\resources\templates" />
-      <recent name="F:\idea-project\prd-start\prd-config\src\main\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.prd" />
       <recent name="com.prd.main" />
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\idea-project\prd-start\prd-oauth2\src\main\java\com\prd\oauth2" />
+      <recent name="F:\idea-project\prd-start\prd-zipkin" />
+      <recent name="F:\idea-project\prd-start\prd-zipkin\src\main\resources" />
+      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\topjui\js" />
+      <recent name="F:\idea-project\prd-start" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.prd.oauth2" />
@@ -269,12 +192,12 @@
       <recent name="com.prd.client.clientImpl" />
       <recent name="com.prd.client" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\idea-project\prd-start\prd-oauth2\src\main\java\com\prd\oauth2" />
-      <recent name="F:\idea-project\prd-start\prd-zipkin" />
-      <recent name="F:\idea-project\prd-start\prd-zipkin\src\main\resources" />
-      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\topjui\js" />
-      <recent name="F:\idea-project\prd-start" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\idea-project\prd-start\prd-zipkin\src\main\java\com\prd" />
+      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\view\sys\user" />
+      <recent name="F:\idea-project\prd-start\prd-admin-ui\src\main\resources\static\view\" />
+      <recent name="F:\idea-project\prd-start\prd-oauth2\src\main\resources\templates" />
+      <recent name="F:\idea-project\prd-start\prd-config\src\main\resources" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -305,7 +228,7 @@
     </option>
     <option name="contentProportion" value="0.14231601" />
   </component>
-  <component name="RunManager" selected="Maven.prd-eureka">
+  <component name="RunManager" selected="Application.PrdZipkinApplication">
     <configuration name="PrdEurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.prd.eureka.PrdEurekaApplication" />
       <module name="prd-eureka" />
@@ -596,13 +519,34 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PrdZipkinApplication" />
-        <item itemvalue="Spring Boot.3.PrdMainApplication" />
-        <item itemvalue="Spring Boot.1.PrdEurekaApplication" />
         <item itemvalue="Application.PrdZipkinApplication" />
+        <item itemvalue="Spring Boot.3.PrdMainApplication" />
         <item itemvalue="Application.PrdEurekaApplication" />
+        <item itemvalue="Spring Boot.PrdZipkinApplication" />
+        <item itemvalue="Spring Boot.1.PrdEurekaApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.19318181" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e9074e3d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e9074e3d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e678274f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -759,6 +703,9 @@
       <workItem from="1565075901607" duration="641000" />
       <workItem from="1568796718565" duration="221000" />
       <workItem from="1568797475916" duration="311000" />
+      <workItem from="1571621570690" duration="638000" />
+      <workItem from="1573004401405" duration="2517000" />
+      <workItem from="1573470310608" duration="3798000" />
     </task>
     <task id="LOCAL-00001" summary="swagger">
       <created>1545967659335</created>
@@ -818,6 +765,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -826,6 +798,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -884,93 +861,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>test</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.38174275" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (prd-main)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.38174275" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>prd-zuul</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.38174275" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.38174275" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
