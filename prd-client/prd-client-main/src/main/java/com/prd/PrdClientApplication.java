@@ -13,10 +13,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @EnableFeignClients
 @EnableHystrix
-public class PrdGateMainApplication {
+public class PrdClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PrdGateMainApplication.class, args);
+        SpringApplication.run(PrdClientApplication.class, args);
     }
 
     @Bean
